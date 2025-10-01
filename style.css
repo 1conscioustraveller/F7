@@ -1,0 +1,174 @@
+/* Global */
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #fafafa;
+}
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 0.5em;
+}
+a {
+  color: #bfa14a;
+  text-decoration: none;
+}
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 8px;
+  z-index: 100;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+.nav-links a.active {
+  border-bottom: 2px solid #bfa14a;
+}
+
+/* Hero */
+.hero {
+  background: url('images/hero.jpg') center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 8rem 2rem;
+}
+.hero h1 {
+  font-size: 3rem;
+}
+.cta-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 2rem;
+  background: #bfa14a;
+  color: #fff;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+.cta-btn:hover {
+  background: #a88f3c;
+}
+
+/* Sections */
+section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+/* Portfolio */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+.gallery img {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+.gallery img:hover {
+  transform: scale(1.03);
+}
+
+/* Testimonials */
+.testimonial-slider {
+  position: relative;
+  max-width: 700px;
+  margin: auto;
+}
+.testimonial {
+  display: none;
+}
+.testimonial.active {
+  display: block;
+}
+.slider-controls {
+  margin-top: 1rem;
+}
+.slider-controls button {
+  background: #bfa14a;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  margin: 0 0.25rem;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.slider-controls button:hover {
+  background: #a88f3c;
+}
+
+/* Form */
+form {
+  max-width: 500px;
+  margin: auto;
+  text-align: left;
+}
+label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+input, textarea, select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+button[type="submit"] {
+  margin-top: 1rem;
+  background: #bfa14a;
+  border: none;
+  padding: 0.75rem;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+button[type="submit"]:hover {
+  background: #a88f3c;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #111;
+  color: #fff;
+}
+
+/* Animations */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
