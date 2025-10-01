@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Luxury wedding and lifestyle photography portfolio. Timeless, elegant, and authentic storytelling through images.">
+  <title>Luxury Wedding Photography | Portfolio</title>
+  
+  <!-- SEO & Social -->
+  <meta property="og:title" content="Luxury Wedding Photography">
+  <meta property="og:description" content="Timeless and elegant wedding photography portfolio.">
+  <meta property="og:image" content="images/portfolio1.jpg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">LUXE</div>
+      <ul class="nav-links">
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h1>Luxury Wedding Photography</h1>
+      <p>Timeless • Elegant • Authentic</p>
+      <a href="#contact" class="cta-btn">Book Your Session</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="fade-in">
+      <h2>Portfolio</h2>
+      <div class="gallery">
+        <figure>
+          <img src="images/portfolio1.jpg" 
+               srcset="images/portfolio1-small.jpg 600w, images/portfolio1.jpg 1200w" 
+               alt="Bride and groom embracing under floral arch" loading="lazy">
+        </figure>
+        <figure>
+          <img src="images/portfolio2.jpg" 
+               srcset="images/portfolio2-small.jpg 600w, images/portfolio2.jpg 1200w" 
+               alt="Couple walking hand in hand at sunset" loading="lazy">
+        </figure>
+        <figure>
+          <img src="images/portfolio3.jpg" 
+               srcset="images/portfolio3-small.jpg 600w, images/portfolio3.jpg 1200w" 
+               alt="Editorial portrait of a bride" loading="lazy">
+        </figure>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="fade-in">
+      <h2>Testimonials</h2>
+      <div class="testimonial-slider">
+        <div class="testimonial active">
+          <p>“Our wedding photos are breathtaking! Every moment was captured beautifully.”</p>
+          <h4>- Emily & John</h4>
+        </div>
+        <div class="testimonial">
+          <p>“The best photographer we could have asked for. Professional and artistic.”</p>
+          <h4>- Sarah & Daniel</h4>
+        </div>
+        <div class="testimonial">
+          <p>“Truly timeless imagery. We’ll cherish these photos forever.”</p>
+          <h4>- Anna & Michael</h4>
+        </div>
+      </div>
+      <div class="slider-controls">
+        <button class="prev">‹</button>
+        <button class="next">›</button>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="fade-in">
+      <h2>About Me</h2>
+      <p>
+        With over 10 years of experience capturing love stories, I specialize in creating timeless,
+        elegant, and authentic images. My approach blends fine art with documentary storytelling,
+        ensuring every detail and emotion is preserved.
+      </p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="fade-in">
+      <h2>Contact</h2>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="event-type">Event Type</label>
+        <select id="event-type" name="event-type" required>
+          <option value="">Select one</option>
+          <option value="wedding">Wedding</option>
+          <option value="engagement">Engagement</option>
+          <option value="lifestyle">Lifestyle</option>
+          <option value="editorial">Editorial</option>
+        </select>
+
+        <label for="date">Event Date</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5"></textarea>
+
+        <button type="submit">Send Inquiry</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Luxury Wedding Photography. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
